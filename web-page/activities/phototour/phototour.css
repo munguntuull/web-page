@@ -1,0 +1,13 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+nav a {
+    color: black;
+}
+
+.current {
+    color: blue;
+    text-decoration: none;
+}
