@@ -1,46 +1,38 @@
-/* Default styles for whole site */
+/* Default style */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    color: #333333;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 0;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    margin: 20px;
 }
 
-/* Page container */
-#container {
-    width: 80%;
-    margin: 20px auto;
-    background-color: #ffffff;
-    padding: 20px;
+/* ID selector */
+#main-title {
+    text-align: center;
+    color: #34495e;
 }
 
-/* Emphasized text */
+/* Class selectors */
 .highlight {
-    color: #d62828; /* emphasis color */
+    color: #27ae60; /* emphasize */
     font-weight: bold;
 }
 
-/* De-emphasized text */
-.muted {
-    color: #777777; /* de-emphasis color */
+.lowlight {
+    color: #7f8c8d; /* de-emphasize */
 }
 
-/* Headings */
-h1, h2 {
-    color: #003049;
-}
-
-/* List styling */
-ul {
-    background-color: #eaeaea;
+/* Sections */
+.section {
+    background-color: white;
     padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
 }
 
-/* Hero section */
-#hero-box {
-    border-left: 5px solid #d62828;
-    padding-left: 15px;
-    background-color: #edf2f4;
+/* Links */
+a {
+    color: #2980b9;
+    text-decoration: none;
 }
