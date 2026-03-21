@@ -1,0 +1,26 @@
+body {
+    font-size: 1.5em;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px gray;
+}
+
+fieldset {
+    box-shadow: 5px 5px 3px gray;
+}
+
+legend {
+    padding: 5px;
+    background-color: blue;
+    color: white;
+}
