@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #eee;
+}
+
+/* HEADER */
+header {
+    background: #e6d3a3;
+    padding: 20px;
+    font-size: 24px;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background: #ddd;
+}
+
+nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* SIDEBAR */
+aside {
+    width: 25%;
+}
+
+aside img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* MAIN */
+main {
+    width: 75%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    background: #f5f5f5;
+    padding: 15px;
+    flex: 1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+article img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background: #e6d3a3;
+    text-align: center;
+    padding: 10px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+    }
+}
+
+/* PRINT */
+@media print {
+    nav {
+        display: none;
+    }
+}

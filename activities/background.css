@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('simple');
+    background-repeat: repeat; 
+    background-color: pink; 
+    background: url(simple.jpeg); 
+    color: white
+}
+  
+    .decorative{
+        min-height: 80px;
+        body {
+    background-image: url("simple.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+        
+
+
+    }
