@@ -27,6 +27,18 @@ background:#555;
 border-radius:5px;
 }
 
+table {
+  width: 100%; /* Table fills the page width */
+  font-size: 18px; /* Make text bigger */
+  border-collapse: collapse; /* Remove extra space between borders */
+}
+
+th, td {
+  padding: 12px; /* Add space inside cells */
+  text-align: left;
+  border: 1px solid #333; /* Add border for clarity */
+}
+
 .container{
 padding:20px;
 }
@@ -36,7 +48,7 @@ max-width:100%;
 }
 
 footer{
-background:#333;
+background:#767070;
 color:white;
 text-align:center;
 padding:15px;
@@ -57,7 +69,7 @@ margin:5px 0;
 
 nav ul li a{
 display:block;
-background:#444;
+background:#af35c7;
 }
 
 }
