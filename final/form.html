@@ -3,57 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form</title>
+<title>Contact</title>
 <link rel="stylesheet" href="final.css">
 </head>
+
 <body>
 
-<header>
-<h1>Contact</h1>
-<nav>
+<h1>Contact Us</h1>
 <ul>
 <li><a href="final.html">Home</a></li>
 <li><a href="page1.html">About</a></li>
-<li><a href="page2.html">Services</a></li>
-<li><a href="page3.html">Table</a></li>
-<li><a class="active" href="form.html">Contact</a></li>
+<li><a href="page2.html">Destinations</a></li>
+<li><a class="active" href="page3.html">Culture</a></li>
+<li><a href="page4.html">Travel Tips</a></li>
+<li><a href="packages.html">Packages</a></li>
+<li><a href="form.html">Contact</a></li>
 </ul>
-</nav>
-</header>
 
-<div class="container">
-<h2>Contact Form</h2>
-
-<form id="myForm">
-<label>Name:</label><br>
-<input type="text" required><br>
-
-<label>Email:</label><br>
-<input type="email" required><br>
-
-<label>Message:</label><br>
-<textarea required></textarea><br>
-
-<label>Phone:</label><br>
-<input type="text" required><br>
-
-<button type="submit">Submit</button>
+<form id="form">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<input type="text" placeholder="Country">
+<textarea placeholder="Message"></textarea>
+<button type="submit">Send</button>
 </form>
 
-<p id="message"></p>
-
-</div>
-
-<footer>
-<p>© 2026</p>
-</footer>
+<p id="result"></p>
 
 <script>
 
-document.getElementById("myForm").addEventListener("submit", function(e){
-e.preventDefault();
-document.getElementById("message").innerText = "Form submitted successfully!";
-document.getElementById("myForm").reset();
+document.getElementById("form").addEventListener("submit",function(e){
+
+ e.preventDefault();
+
+ fetch("https://jsonplaceholder.typicode.com/posts",{
+ method:"POST",
+ body:JSON.stringify({test:"data"}),
+ headers:{"Content-type":"application/json"}
+ })
+
+ .then(res=>res.json())
+ .then(data=>{
+ document.getElementById("result").innerHTML="Message Sent Successfully";
+ document.getElementById("form").reset();
+ });
+
 });
 
 </script>
